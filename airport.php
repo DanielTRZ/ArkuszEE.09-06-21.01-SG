@@ -22,25 +22,25 @@
       
       
       
-    mysql_connect("localhost", "root", " ");
-    mysql_select_db("samoloty2");
+    mysqli_connect("localhost","root","","samoloty2");
+   
 
-    $query = "SELECT * FROM users";
-    $result = mysql_query($query);
-    while ($row = mysql_fetch_array  ($result))
+    $query = "SELECT `id`,`nr_rejsu`,`czas`,`kierunek`,`status_lotu` FROM `odloty` ORDER BY `czas` DESC ";
+    $result = mysqli_query($query);
+    while ($row = mysqli_fetch_array ($result))
     {
-        echo "<tr>";
-        echo "<td>".$row['firstname']."</td>";
-        echo "<td>".$row['lastname']."</td>";
-        echo "<td>".$row['phone']."</td>";
-        echo "</tr>";
+       echo "<tr>";
+        echo "<td>".$row['id']."</td>";
+        echo "<td>".$row['nr_rejsu']."</td>";
+        echo "<td>".$row['czas']."</td>";
+       echo "</tr>";
     }
 
       
       
       
       
-      
+      mysqli_close("samoloty2");
       
       
       
