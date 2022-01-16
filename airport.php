@@ -4,18 +4,19 @@
   <head>
 
      <meta charset="utf-8">
-     <title>Moja witryna</title>
-
-     <meta name="description" content="Opis zawartości strony dla wyszukiwarek">
-     <meta name="keywords" content="słowa, kluczowe, opisujące, zawartość">
-     <meta name="author" content="Jan Programista">
-
+     <title>Odloty Samolotów</title>
      <meta http-equiv="X-Ua-Compatible" content="IE=edge,chrome=1">
-     <link rel="stylesheet" href="arkusz.css">
-     <script src="skrypt.js"></script>
+     <link rel="stylesheet" href="styl6.css">
 
   </head>
   <body>
+  <div id="ban1"></div>
+  <div id="ban2"></div>
+  <div id="glowny"></div>
+  <div id="stop1"></div>
+  <div id="stop2"></div>
+  <div id="stop3"></div>
+  
 
   </body>
 
