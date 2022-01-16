@@ -21,34 +21,50 @@
       <?php
       
       
-      
-    mysqli_connect("localhost","root","","samoloty2");
+      $baza=mysqli_connect('localhost','root','','egzaminsamoloty');
+     if(mysqli_connect_errno())
+     {echo"wystapil blad polaczenia z baza";}
+      $wynik=mysqli_query($baza,'SELECT `czas`,`kierunek`,`nr_rejsu`,`status_lotu` FROM `przyloty` ORDER BY `czas` ASC');
+      while($r=mysqli_fetch_array($wynik))
+      {
+     echo "<tr>";
+     echo "<td>";
+     echo $r["czas"];
+     echo "</td>"; 
    
+         
+       
+     echo "<td>";
+     echo $r["kierunek"];
+     echo "</td>";   
+     
+          
+     echo "<td>";
+     echo $r["nr_rejsu"];
+     echo "</td>";  
+        
+     echo "<td>";
+     echo $r["status_lotu"];
+     echo "</td>";
+     echo "</tr>"; 
 
-    $query = "SELECT `id`,`nr_rejsu`,`czas`,`kierunek`,`status_lotu` FROM `odloty` ORDER BY `czas` DESC ";
-    $result = mysqli_query($query);
-    while ($row = mysqli_fetch_array ($result))
-    {
-       echo "<tr>";
-        echo "<td>".$row['id']."</td>";
-        echo "<td>".$row['nr_rejsu']."</td>";
-        echo "<td>".$row['czas']."</td>";
-       echo "</tr>";
-    }
-
+      
+      }
+      
+   
       
       
       
-      
-      mysqli_close("samoloty2");
-      
+     
       
       
-      
+       mysqli_close($baza);
       
       ?>
         
       </table>
+      
+      
       
   </div>
   <div id="stop1"><a href="Kwerendy.txt" target="_blank">Pobierz obraz</a></div>

@@ -3,29 +3,34 @@
     width: 75%;
     height: 150px;
     font-size: 200%;
+    float: left;
 }
 #ban2{
     width: 25%;
     height: 150px;
+    float: left;
     
 }
 #glowny{
     background-color: rgb(128,0,0);
     padding: 50px;
     text-transform: uppercase;
-    
+    clear: both;
 }
 #stop1{
     width: 20%;
     padding-bottom: 90px;
+    float: left;
 }
 #stop3{
     width: 20%;
     padding-bottom: 90px;
+    float: right;
 }
 #stop2{
     text-align: center;
     width: 60%;
+    float: left;
 }
 body{
     font-family: Arial;
