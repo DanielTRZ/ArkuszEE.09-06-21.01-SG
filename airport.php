@@ -70,16 +70,22 @@
   <div id="stop1"><a href="Kwerendy.txt" target="_blank">Pobierz obraz</a></div>
   <div id="stop2">
       <?php
+    
       
-      
-      
-      
-      
-      
-      
-      
-      
-      
+      if (isset($_COOKIE["ciasteczko"])) {
+				echo "<p><b>Dzień dobry! Sprawdż regulamin naszej strony</b></p>";
+			} else {
+				$cookie_name = "cookie";
+				$cookie_value = "";
+				$cookie_time = time() + 60*1;
+				$cookie_path = "";
+				$cookie_domain = "";
+				$cookie_secure  = false;
+				$cookie_httponly = false;
+				setcookie($cookie_name, $cookie_value, $cookie_time, $cookie_path, $cookie_domain, $cookie_secure, $cookie_httponly);
+				echo "<p  style='font-style:italic;'>Miło nam ,że nas znowu odwiedziłeś</p>";
+			}   
+  
       
       ?>
       
