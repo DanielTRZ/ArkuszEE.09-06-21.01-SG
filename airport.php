@@ -73,7 +73,7 @@
     
       
       if (isset($_COOKIE["ciasteczko"])) {
-				echo "<p><b>Dzień dobry! Sprawdż regulamin naszej strony</b></p>";
+				echo "<p style='font-style:italic;'>Dzień dobry! Sprawdż regulamin naszej strony</p>";
 			} else {
 				$cookie_name = "cookie";
 				$cookie_value = "";
@@ -83,7 +83,7 @@
 				$cookie_secure  = false;
 				$cookie_httponly = false;
 				setcookie($cookie_name, $cookie_value, $cookie_time, $cookie_path, $cookie_domain, $cookie_secure, $cookie_httponly);
-				echo "<p  style='font-style:italic;'>Miło nam ,że nas znowu odwiedziłeś</p>";
+				echo "<p><b>Miło nam ,że nas znowu odwiedziłeś</b></p>";
 			}   
   
       
