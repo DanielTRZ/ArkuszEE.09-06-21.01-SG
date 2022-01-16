@@ -22,7 +22,20 @@
       
       
       
-      
+    mysql_connect("localhost", "root", " ");
+    mysql_select_db("samoloty2");
+
+    $query = "SELECT * FROM users";
+    $result = mysql_query($query);
+    while ($row = mysql_fetch_array  ($result))
+    {
+        echo "<tr>";
+        echo "<td>".$row['firstname']."</td>";
+        echo "<td>".$row['lastname']."</td>";
+        echo "<td>".$row['phone']."</td>";
+        echo "</tr>";
+    }
+
       
       
       
