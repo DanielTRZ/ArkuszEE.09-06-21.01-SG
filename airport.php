@@ -18,14 +18,44 @@
           <th>lp</th> <th>numer rejsu</th><th>czas</th><th>kierunek</th><th>status</th>
       </tr>
       
+      <?php
       
       
       
-  </table>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      ?>
+        
+      </table>
+      
   </div>
-  <div id="stop1"></div>
-  <div id="stop2"></div>
-  <div id="stop3"></div>
+  <div id="stop1"><a href="Kwerendy.txt" target="_blank">Pobierz obraz</a></div>
+  <div id="stop2">
+      <?php
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      ?>
+      
+  </div>
+  <div id="stop3"><p>Autor:00000000</p></div>
   
 
   </body>
