@@ -38,22 +38,31 @@ body{
     color: white;
 }
 a{
-    font-size: 150%;
+    font-size:150%;
     border: 2px;
-    border-style: dashed;
-    border-color: rgb(192,192,192);
-    padding: 5px;
+    border-style:dotted;
+    border-color: rgb(169,169,169);
+   
 }
 a:hover{
     background-color: rgb(169,169,169);
 }
-tr{
+table{
     width: 100%;
-    border: collapse;
+    border-collapse: collapse;
 }
-tr,td{
+tr,th{
     border: 1px;
     border-style: solid;
     border-color: rgb(192,192,192);
     padding: 5px;
+   
 }
+ td{
+    border: 1px;
+    border-style: solid;
+    border-color: rgb(192,192,192);
+    padding: 5px;
+  
+}
+

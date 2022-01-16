@@ -2,6 +2,6 @@ kw1    SELECT`id`,`nr_rejsu`,`czas`,`kierunek`,`status_lotu` FROM `odloty` ORDER
 
 kw2   SELECT MIN(czas) FROM `odloty` WHERE  czas LIKE "10:1%" ;
 
-kw3   SELECT `nr_rejsu`,`samoloty.linie` FROM `odloty` JOIN `samoloty` ON przyloty.samoloty_id = samoloty.id WHERE `kierunek`= "malta";
+kw3   SELECT `nr_rejsu`,`samoloty.linie` FROM `odloty` JOIN `samoloty` ON przyloty.samoloty_id = samoloty.id       WHERE `kierunek`= "malta";
 
 kw4   UPDATE `przyloty` SET `status_lotu`='[planowy ]' WHERE `nr_rejsu` ="LH9829";

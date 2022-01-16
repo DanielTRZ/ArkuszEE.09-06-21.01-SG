@@ -21,28 +21,33 @@
       <?php
       
       
-      $baza=mysqli_connect('localhost','root','','egzaminsamoloty');
+     $baza=mysqli_connect('localhost','root','','samoloty2');
      if(mysqli_connect_errno())
      {echo"wystapil blad polaczenia z baza";}
-      $wynik=mysqli_query($baza,'SELECT `czas`,`kierunek`,`nr_rejsu`,`status_lotu` FROM `przyloty` ORDER BY `czas` ASC');
+      $wynik=mysqli_query($baza, 'SELECT`id`,`nr_rejsu`,`czas`,`kierunek`,`status_lotu` FROM `odloty` ORDER BY `czas` DESC ');
       while($r=mysqli_fetch_array($wynik))
       {
      echo "<tr>";
      echo "<td>";
-     echo $r["czas"];
+     echo  $r["id"]  ;
      echo "</td>"; 
    
          
        
      echo "<td>";
-     echo $r["kierunek"];
+     echo $r["nr_rejsu"];
      echo "</td>";   
      
           
      echo "<td>";
-     echo $r["nr_rejsu"];
+     echo $r["czas"];
      echo "</td>";  
         
+     echo "<td>";
+     echo $r["kierunek"];
+     echo "</td>";
+          
+          
      echo "<td>";
      echo $r["status_lotu"];
      echo "</td>";
@@ -52,11 +57,6 @@
       }
       
    
-      
-      
-      
-     
-      
       
        mysqli_close($baza);
       
