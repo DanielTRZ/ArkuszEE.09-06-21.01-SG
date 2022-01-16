@@ -1,3 +1,41 @@
 #ban1{
+    text-align: center;
+    width: 75%;
+    height: 150px;
+    font-size: 200%;
+}
+#ban2{
+    width: 25%;
+    height: 150px;
     
+}
+#glowny{
+    background-color: rgb(128,0,0);
+    padding: 50px;
+    text-transform: uppercase;
+    
+}
+#stop1{
+    width: 20%;
+    padding-bottom: 90px;
+}
+#stop3{
+    width: 20%;
+    padding-bottom: 90px;
+}
+#stop2{
+    text-align: center;
+    width: 60%;
+}
+body{
+    font-family: Arial;
+    background-color: rgb(244,164,96);
+    color: white;
+}
+a{
+    font-size: 150%;
+    border: 2px;
+    border-style: dashed;
+    border-color: rgb(192,192,192);
+    padding: 5px;
 }
