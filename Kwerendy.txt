@@ -1,4 +1,4 @@
-kw1
+kw1  SELECT`id`,`nr_rejsu`,`czas`,`kierunek`,`status_lotu` FROM `odloty` ORDER BY `odloty`.`czas` DESC
 
 kw2
 
